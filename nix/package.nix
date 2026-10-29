@@ -200,7 +200,7 @@ rustPlatform.buildRustPackage {
       masters, typography and print output. It ships with designcraft-cli, a headless command runner
       and MCP server for AI agents.
     '';
-    homepage = "https://getartcraft.com/apps/designcraft";
+    homepage = "https://github.com/dfoliveira2143/designcraft";
     license = with lib.licenses; [
       mit
       asl20

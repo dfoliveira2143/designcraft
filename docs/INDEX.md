@@ -45,3 +45,5 @@ Os guias são mapas de navegação, não novas cópias dos contratos técnicos. 
 - [Placed PDF layer visibility](pdf-layer-visibility.md)
 - [Typography and composition parity](typography-parity.md)
 - [UI and interaction parity](ui-parity.md)
+
+- [Creative Workshop: origem, identidade e publicação](branding.md)

@@ -16,7 +16,7 @@ fn main() {
     res.set_icon("../../assets/app-icon/designcraft.ico")
         .set("ProductName", "DesignCraft")
         .set("FileDescription", "DesignCraft page layout")
-        .set("CompanyName", "Learning Machines LLC")
+        .set("CompanyName", "Creative Workshop contributors")
         .set("LegalCopyright", "Copyright (c) the DesignCraft authors. MIT OR Apache-2.0.")
         .set("OriginalFilename", "designcraft.exe")
         .set("InternalName", "designcraft");

@@ -231,7 +231,7 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
             let (r, _) = ui.allocate_exact_size(vec2(44.0, 44.0), Sense::hover());
             crate::about::paint_mark(ui, r, crate::about::BRAND);
             ui.add_space(8.0);
-            let label = crate::i18n::tr(&app.ui.language, "Join our Discord");
+            let label = crate::i18n::tr(&app.ui.language, "Project support");
             let button = crate::about::discord_button_size(ui.ctx(), label, BUTTON);
             let text_width = (ui.available_width() - button.x - 16.0).max(120.0);
             ui.vertical(|ui| {
@@ -239,7 +239,7 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                 ui.style_mut().wrap_mode = Some(egui::TextWrapMode::Wrap);
                 ui.label(crate::rtl::widget(
                     ui,
-                    egui::RichText::new(crate::i18n::tr(&app.ui.language, "Join the ArtCraft community")).font(semibold(14.0)).color(t.text_strong),
+                    egui::RichText::new(crate::i18n::tr(&app.ui.language, "Project support")).font(semibold(14.0)).color(t.text_strong),
                 ));
                 ui.label(crate::rtl::widget(
                     ui,
@@ -249,7 +249,8 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                 ));
                 ui.add_space(4.0);
                 ui.horizontal(|ui| {
-                    for (text, id) in [("DesignCraft page", "help.appPage"), ("GitHub", "help.github"), ("getartcraft.com", "help.website")] {
+                    for (text, id) in [("DesignCraft page", "help.appPage"), ("GitHub", "help.github"), ("github.com/dfoliveira2143", "help.website")]
+                    {
                         let url = designcraft_engine::links::get(&id[5..]).unwrap_or_default();
                         let l = ui
                             .add(egui::Label::new(egui::RichText::new(text).size(12.0).color(t.accent).underline()).sense(Sense::click()))
